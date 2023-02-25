@@ -4,3 +4,55 @@
     <p>The best drinking game you have ever played</p>
   </div>
 </div>
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-3">
+      <p>Introduction</p>
+    </div>
+    <div class="col-9">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, nihil suscipit hic aperiam repellendus, cumque quidem voluptas optio consequatur tempora esse harum fugiat ducimus odit sapiente expedita perferendis ipsum placeat.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-3">
+      <p>The Game</p>
+    </div>
+    <div class="col-9">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, nihil suscipit hic aperiam repellendus, cumque quidem voluptas optio consequatur tempora esse harum fugiat ducimus odit sapiente expedita perferendis ipsum placeat.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-3">
+      <p>The Shots</p>
+    </div>
+    <div class="col-9">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, nihil suscipit hic aperiam repellendus, cumque quidem voluptas optio consequatur tempora esse harum fugiat ducimus odit sapiente expedita perferendis ipsum placeat.</p>
+    </div>
+  </div>
+
+  <%# Make a carusel of pictures %>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <%= image_tag "rules-overview.png", alt: "First slide", class:"d-block w-100" %>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag "shots-pic.png", alt: "Second slide", class:"d-block w-100" %>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag "rules-overview.png", alt: "Third slide", class:"d-block w-100" %>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
