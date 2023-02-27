@@ -1,9 +1,10 @@
 .banner {
-  background-image: asset-url("f1-banner.jpeg"),linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+  background-image: asset-url("f1-track.jpeg"),linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
   opacity: 0.9;
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  height: 60vh;
 }
 
 .banner h1 {
