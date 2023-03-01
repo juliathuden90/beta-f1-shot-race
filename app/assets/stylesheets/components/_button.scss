@@ -1,0 +1,26 @@
+.button-28 {
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  color: #ef0404;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0.5em;
+  min-height: 60px;
+  min-width: 0;
+  padding: 4px 1px;;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    background-color: #1A1A1A;
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
