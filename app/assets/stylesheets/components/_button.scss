@@ -6,7 +6,6 @@
   display: inline-block;
   font-size: 24px;
   font-weight: 600;
-  line-height: normal;
   margin: 0.5em;
   min-height: 60px;
   min-width: 0;
@@ -14,9 +13,11 @@
   text-align: center;
   text-decoration: none;
   width: 100%;
+  font-style: italic;
+  line-height: 2em;
 
   &:hover {
-    background-color: #1A1A1A;
+    border: 3px solid red;
   }
 }
 
@@ -25,4 +26,7 @@
   justify-content: space-around;
 }
 
-
+.button-div {
+  display: flex;
+  justify-content: center;
+}
