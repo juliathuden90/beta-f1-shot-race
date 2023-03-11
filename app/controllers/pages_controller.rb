@@ -14,4 +14,7 @@ class PagesController < ApplicationController
   def founders
   end
 
+  def shots
+  end
+
 end

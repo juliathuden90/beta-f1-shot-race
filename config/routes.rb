@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get "print", to: "pages#print"
   get "raceinfo", to: "pages#raceinfo"
   get "founders", to: "pages#founders"
+  get "shots", to: "pages#shots"
 end

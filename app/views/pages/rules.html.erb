@@ -1,7 +1,19 @@
 <div class="navbar-space">
 </div>
 <div class="container mt-2">
-  <h1>Rules</h1>
-
+  <h1 class="h1-center">The Rules</h1>
+</div>
   <%= image_tag "rules-overview.png", id: "rules-overview-img", crop: :fill, alt: "rules" %>
+<div class="container mt-2">
+  <h3>Preparations</h3>
+  <ul>
+    <li>Prepare the <%= link_to 'shots', shots_path, class: "black-link"%></li>
+    <li>Draw lots about <%= link_to 'who will sit where', shots_path, class: "black-link"%></li>
+    <li>Each player select a <%= link_to 'megadriver', shots_path, class: "black-link"%></li>
+    <li><%= link_to 'Print', print_path, class: "black-link"%> the rules and the shot list</li>
+  </ul>
+
+  <hr>
+  <%= render "seeting"%>
+  <%= render "megadriver"%>
 </div>
