@@ -1,6 +1,6 @@
     <div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <%= image_tag "shot-race.logo.png", alt: "Logo", class:"navbar-logo" %>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,13 +10,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">| Home</a>
+              <%= link_to '| Home', root_path, class: "nav-link"%>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">| Rules</a>
+              <%= link_to '| The Game', rules_path, class: "nav-link"%>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">| Founders</a>
+              <%= link_to '| The Shots', shots_path, class: "nav-link"%>
+            </li>
+            <li class="nav-item">
+              <%= link_to '| Founders', founders_path, class: "nav-link"%>
             </li>
           </ul>
         </div>
