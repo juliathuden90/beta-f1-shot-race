@@ -8,7 +8,6 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
-    <%#= favicon_link_tag asset_path('f1-favicon.jpeg') %>
     <%= favicon_link_tag "shot-race-favicon.png", rel: "icon", type: "image/png" %>
   </head>
 
@@ -19,8 +18,6 @@
 
     <%= yield %>
 
-    <div class="footer-space">
-    </div>
     <%= render "/shared/footer" %>
   </body>
 </html>
