@@ -1,24 +1,8 @@
-# README
+# F1 Shot Race
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+This webpage desribe how top play the F1 Shot Race game. 
+So far it's just a static webpage with information, and it's just the beta version as all information has not been included yet. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Future plans
+Future plans for this app is to be able to put in the bets in the app and through that help keeping the score. 
