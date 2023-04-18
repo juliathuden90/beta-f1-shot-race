@@ -1,16 +1,13 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
 
-// Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+// Import F1 Fonts
+@import url('https://blogfonts.com/css/aWQ9MTUxNTEzJnN1Yj01MTMmYz1mJnR0Zj1Gb3JtdWxhMS1SZWd1bGFyX3dlYl8wLnR0ZiZuPWZvcm11bGExLWRpc3BsYXktcmVndWxhci0y/Formula1');
+@import url('https://blogfonts.com/css/aWQ9MTUxNTEzJnN1Yj01MTMmYz1mJnR0Zj1Gb3JtdWxhMS1Cb2xkX3dlYl8wLnR0ZiZuPWZvcm11bGExLWRpc3BsYXktYm9sZA/Formula1');
 
-// To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+// Define fonts for body and headers
+$body-font: 'formula1-display-regular-2', sans-serif;
+$headers-font: 'formula1-display-bold', sans-serif;
+
+//$body-font: "Work Sans", "Helvetica", "sans-serif";
+//$headers-font: "Nunito", "Helvetica", "sans-serif";
