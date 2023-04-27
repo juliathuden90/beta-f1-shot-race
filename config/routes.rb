@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'pages/home'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -10,4 +11,5 @@ Rails.application.routes.draw do
   get "raceinfo", to: "pages#raceinfo"
   get "founders", to: "pages#founders"
   get "shots", to: "pages#shots"
+  get "games/new", to: "games#new"
 end

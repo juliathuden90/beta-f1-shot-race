@@ -1,0 +1,13 @@
+<div class="navbar-space">
+</div>
+<div class="container mt-2">
+
+  <h1 class="h1-center" >Create a game</h1>
+  <p class="text-center" >Are you playing the upcoming race?</p>
+  <h1 class="h1-center"> <%= @track.name %>' GP</h1>
+  <p class="text-center" >or select an other race</p>
+
+  <% @tracks.each do |track| %>
+    <p> <%= track.name %> </p>
+  <% end %>
+</div>
