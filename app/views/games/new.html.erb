@@ -7,7 +7,10 @@
   <h1 class="h1-center"> <%= @track.name %>' GP</h1>
   <p class="text-center" >or select an other race</p>
 
-  <% @tracks.each do |track| %>
-    <p> <%= track.name %> </p>
-  <% end %>
+  <div class="mt-5">
+    <%= form_with url: "/games/new", data: {}, method: :get do |form| %>
+      <%= form.select :tracks, @tracks_name, {}, { class: "form-dropdown" } %>
+      <%= form.submit "SELECT GAME!", class: "btn btn-primary", data: {} %>
+    <% end %>
+  </div>
 </div>

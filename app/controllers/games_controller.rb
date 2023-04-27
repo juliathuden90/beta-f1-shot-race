@@ -3,6 +3,14 @@ class GamesController < ApplicationController
     @game = Game.new
     @track = find_next_race_track
     @tracks = Track.all
+    @tracks_name = [@track.name]
+    @tracks.each do |track|
+      @tracks_name << track.name
+    end
+  end
+
+  def create
+    game =
   end
 
   private
