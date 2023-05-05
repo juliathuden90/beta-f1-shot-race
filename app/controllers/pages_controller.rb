@@ -14,6 +14,7 @@ class PagesController < ApplicationController
   end
 
   def founders
+    @founder = Founder.first
   end
 
   def shots

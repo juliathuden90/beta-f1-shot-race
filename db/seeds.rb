@@ -5,7 +5,15 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+require "open-uri"
+
 # CREATING #
+
+# Destroy all founders
+puts "Destroying all founders"
+Founder.destroy_all
+puts "All founders destroyed"
 
 # Destroy all teams
 puts "Destroying all teams"
@@ -23,6 +31,15 @@ User.destroy_all
 puts "All users destroyed"
 
 # CREATING #
+
+# Creating founders
+puts "Creating founders"
+file = URI.open("https://res.cloudinary.com/dscnziher/image/upload/v1683273859/plj6iixjmcb3bbltkqbn.jpg")
+julia = Founder.new(name: "Julia", description: "F1 Shot Race founder and CTO")
+julia.photo.attach(io: file, filename: "julia_profile.png", content_type: "image/png")
+julia.save
+
+puts "Created #{Founder.count} founders"
 
 # Creating teams
 puts "Creating teams"
