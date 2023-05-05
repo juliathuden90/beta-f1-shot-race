@@ -1,4 +1,5 @@
 class GamesController < ApplicationController
+
   def new
     @game = Game.new
     @track = find_next_race_track
@@ -10,7 +11,6 @@ class GamesController < ApplicationController
   end
 
   def create
-    game =
   end
 
   private
