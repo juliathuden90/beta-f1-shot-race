@@ -6,7 +6,9 @@ class GamesController < ApplicationController
     @tracks = Track.all
     @tracks_name = [@track.name]
     @tracks.each do |track|
-      @tracks_name << track.name
+      unless @track.name == track.name
+        @tracks_name << track.name
+      end
     end
   end
 

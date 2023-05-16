@@ -1,16 +1,19 @@
 <div class="navbar-space">
 </div>
-<div class="container mt-2">
+<img src="https://media.formula1.com/image/upload/content/dam/fom-website/sutton/2022/Italy/Sunday/1422823415.jpg.transform/9col-retina/image.jpg" alt="race", class= "page-overview-img", crop :fill,>
+<div class="container mt-5">
 
-  <h1 class="h1-center" >Create a game</h1>
-  <p class="text-center" >Are you playing the upcoming race?</p>
-  <h1 class="h1-center"> <%= @track.name %>' GP</h1>
-  <p class="text-center" >or select an other race</p>
+  <h1 class="h1-center" >Create a new game</h1>
+  <p class="text-center" >Which Grand Prix are yor creating tha game for?</p>
 
-  <div class="mt-5">
+  <div class="mt-5 text-center">
     <%= form_with url: "/games/new", data: {}, method: :get do |form| %>
-      <%= form.select :tracks, @tracks_name, {}, { class: "form-dropdown" } %>
-      <%= form.submit "SELECT GAME!", class: "btn btn-primary", data: {} %>
+      <div class="button-wrapper mb-2">
+        <%= form.select :tracks, @tracks_name, {}, { class: "form-dropdown" } %>
+      </div>
+      <div class="button-wrapper mb-2">
+        <%= form.submit "SELECT GAME!", class: "btn button-28", data: {} %>
+      </div>
     <% end %>
   </div>
 </div>
